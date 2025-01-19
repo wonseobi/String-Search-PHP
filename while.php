@@ -8,10 +8,10 @@ while ($attempts < $maxAttempts){
     echo "Guess the password ";
     $guess = trim(fgets(STDIN));
     $attempts++;
-    break;
 
     if ($guess == $secret) {
         echo "Password Accepted, Access Granted\n";
+        break;
     } elseif ($attempts == $maxAttempts) {
         echo "Too many attempts, Access denied.\n";
     } else {
