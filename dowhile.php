@@ -5,6 +5,8 @@ do{
     if (6 == $diceRoll){
         echo "Congrats! You hit the jackpot! \n";
     }
+    echo "Roll again? (y/n)";
+    $rollAgain = trim(fgets(STDIN));
     // loop body
-} while ();
+} while ('y' == $rollAgain);
 ?>
