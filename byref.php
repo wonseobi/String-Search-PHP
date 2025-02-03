@@ -1,10 +1,12 @@
 <?php
 
-fucntion doubleValue(int $number): int{
+function doubleValue(int &$number): int{
     $number *= 2;
     return $number;
 }
 
-echo "my name is won";
+$original = 5;
+doubleValue($original);
+var_dump($original);
 
-$original
+?>
